@@ -1,2 +1,12 @@
+import React from 'react';
+
 import App from './src/app';
-export default App;
+import Storybook from './storybook';
+
+const Root = () => {
+    if (process.env.STORYBOOK) {
+        return <Storybook />;
+    } else {
+        return <App />;
+    }
+};
