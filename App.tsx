@@ -10,3 +10,5 @@ const Root = () => {
         return <App />;
     }
 };
+
+export default Root;

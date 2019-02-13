@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { getStorybookUI, configure, addDecorator } from '@storybook/react-native';
-import { createAppContainer } from 'react-navigation';
 import { loadStories } from './storyLoader';
 
 // import stories
