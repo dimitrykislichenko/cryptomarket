@@ -4,6 +4,10 @@ import { AppRegistry } from 'react-native';
 import { getStorybookUI, configure, addDecorator } from '@storybook/react-native';
 import { loadStories } from './storyLoader';
 
+import { ReduxProvider } from '../src/providers';
+
+addDecorator(story => <ReduxProvider>{story()}</ReduxProvider>);
+
 // import stories
 configure(() => {
     loadStories();
